@@ -1,0 +1,18 @@
+<h3>Aggiungere <small>{{newCharacter.name}}</small></h3>
+<hr>
+<!-- two way data binding:receive and emit event or properties -->
+<form (ngSubmit)="addSubmitForm()">
+    <input type="text" 
+    name="nome" id="" placeholder="nome"
+    [(ngModel)]="newCharacter.name"
+    ><!-- To use ngModel is necessary to add the name attribute -->
+
+       
+
+    <input type="number" name="potere" id="" placeholder="potere" [(ngModel)]="newCharacter.power">
+
+    <button type="submit">Aggiungere</button>
+    <!-- OLD WAY
+        [value]="newCharacter.name"
+        (input)="changeName($event)" -->
+</form>

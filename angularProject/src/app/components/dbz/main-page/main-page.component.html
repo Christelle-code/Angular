@@ -3,10 +3,12 @@
 
 <div class="row">
     <div class="col">
-        <app-characters [characterList]="characters"></app-characters>
+        <app-characters></app-characters>
     </div>
 
     <div class="col">
-       <app-add-characters [charactersArray]="characters" [newCharacter]="newCharacter"></app-add-characters>
+       <app-add-characters 
+       [newCharacter]="newCharacter"
+      ></app-add-characters>
     </div>
 </div>
